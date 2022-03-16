@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <title>Shopping | Shevoke</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/shoppingbag.css">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper-shoppingbag">
+        <header id="header" class="header">
+            <div class="header-top">
+                <div class="header-account">
+                    <i class="far fa-user header-account-icon"></i>
+                    <div class="header-account-log"><button class="btn-account"> <a href="login.html"
+                                target="blank">LogIn</a></button></div>
+                    <div class="header-account-log"><button class="btn-account">SignUp</button></div>
+                </div>
+                <div class="header-logo">
+                    <a href="index.html"><img src="images/black_logo_140x.webp" class="logo-size" alt="Oh Polly"></a>
+                </div>
+                <ul class="header-icon-list">
+                    <li class="header-icon-list-item ">
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" action="#" method="GET">
+                                <div class="container-search">
+                                    <div class="container-search-box">
+                                        <input type="text"  placeholder="What are you looking for?" name="search" value="">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close-search" title="Close Search">
+                                        &times;
+                                    </span>
+                                    </div>
+                                    <div class="search-suggest">
+                                        <span>Suggestion:</span>
+                                        <a href="product.html">Tops</a>
+                                        <a href="#">Dress</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>                    
+                    <span onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;"><i class="fas fa-search text-color"></i></span>
+                    </li>
+                    <li class="header-icon-list-item ">
+                        <a href="#"><i class="fas fa-shopping-bag text-color"></i></a>
+                        <div class="shoppingbag-number">0</div>
+                    </li>
+                    <li class="header-icon-list-item icon-heart ">
+                        <a href="#"><i class="far fa-heart text-color"></i></a>
+                    </li>
+
+                    <li class="header-icon-list-item icon-bar ">
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#">What's New</a>
+                            <a href="#">Shop</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Accessories</a>
+                            <a href="#">Beauty</a>
+                            <a href="#">Gifts</a>
+                        </div>
+                        <span style="cursor:pointer" onclick="openNav()"><i class="fas fa-bars text-color"></i></span>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="header-bottom">
+                <ul class="header-bottom-navbar">
+                    <li class="header-bottom-list">
+                        <a href="#" class="header-bottom-item">What's New</a>
+                        <div class="dropdownlist">
+                            <div class="dropdownlist-contain">
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"><b>Shop All</b></a></li>
+                                        <li><a href="#"><b>New Today</b></a></li>
+                                        <li><a href="#"><b>New This Week</b></a></li>
+                                        <li><a href="#"><b>Best Seller</b></a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"> <b>Trending</b></a></li>
+                                        <li><a href="#">Tall Clothing</a></li>
+                                        <li><a href="#">Resort Wear</a></li>
+                                        <li><a href="#">Cut Out</a></li>
+                                        <li><a href="#">Croptop</a></li>
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">90's Style</a></li>
+                                        <li><a href="#">Cozy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/lazyp.png" alt=""></a>
+                                    <a href="#">
+                                        <p> <a href="#"><b>Shop Influencer Looks</b></a></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-bottom-list">
+                        <a href="#" class="header-bottom-item">Shop</a>
+                        <div class="dropdownlist">
+                            <div class="dropdownlist-contain">
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"><b>Shop All</b></a></li>
+                                        <li><a href="#"><b>New Arrivals</b></a></li>
+                                        <li><a href="#"><b>Sale</b></a></li>
+                                        <li><a href="#"><b>Best Seller</b></a></li>
+                                        <li><a href="#"><b>Plus</b></a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="product.html"> <b>Shop Tops</b></a></li>
+                                        <li><a href="#">Croptop</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">Jacket</a></li>
+                                        <li><a href="#">Cut Out</a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"> <b>Shop By Style</b></a></li>
+                                        <li><a href="#">Men Wear</a></li>
+                                        <li><a href="#">Resort Wear</a></li>
+                                        <li><a href="#">70's Style</a></li>
+                                        <li><a href="#">Croptop</a></li>
+                                        <li><a href="#">Street Style</a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"> <b>Shop Swim</b></a></li>
+                                        <li><a href="#">Bikini</a></li>
+                                        <li><a href="#">Sunglasses</a></li>
+                                        <li><a href="#">SwimSuits</a></li>
+                                        <li><a href="#">Beach Wear</a></li>
+                                        <li><a href="#">Bikini Tops</a></li>
+                                        <li><a href="#">Bikini Bottoms</a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img
+                                            src="images/600x600_Lingerie-Sets_29f3a341-4873-4f07-b365-07bedd3943c8_220x.jpg"
+                                            alt=""></a>
+                                    <a href="#">
+                                        <p><a href="#"><b>Shop Bikini </b></a></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-bottom-list">
+                        <a href="#" class="header-bottom-item">Shoes</a>
+                        <div class="dropdownlist">
+                            <div class="dropdownlist-contain">
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"><b>Shop All</b></a></li>
+                                        <li><a href="#"><b>Unique</b></a></li>
+                                        <li><a href="#"><b>Casual</b></a></li>
+                                        <li><a href="#"><b>Best Seller</b></a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"> <b>Shop By Style</b></a></li>
+                                        <li><a href="#">Heels</a></li>
+                                        <li><a href="#">Boots </a></li>
+                                        <li><a href="#">Sneaker</a></li>
+                                        <li><a href="#">Booties</a></li>
+                                        <li><a href="#">Pump</a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/shopshoes.jpg" alt=""></a>
+                                    <a href="#">
+                                        <p> <a href=""><b> Shop Clear Shoes</b></a></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-bottom-list">
+                        <a href="#" class="header-bottom-item">Accessories</a>
+                        <div class="dropdownlist">
+                            <div class="dropdownlist-contain">
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"><b>Shop All</b></a></li>
+                                        <li><a href="#"><b>New Arrivals</b></a></li>
+                                        <li><a href="#"><b>Best Seller</b></a></li>
+                                        <li><a href="#"><b>Hair Accessories</b></a></li>
+                                        <li><a href="#"><b>Belt</b></a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/handbag-acces.jpg" alt=""></a>
+                                    <a href="#">
+                                        <p><a href="#"><b> HandBags</b></a> </p>
+                                    </a>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/hats.webp" alt=""></a>
+                                    <a href="#">
+                                        <p><a href="#"><b> Hats</b></a> </p>
+                                    </a>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/ringg.webp" alt=""></a>
+                                    <a href="#">
+                                        <p><a href="#"><b> Jewelry</b></a> </p>
+                                    </a>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/sunglasses.webp" alt=""></a>
+                                    <a href="#">
+                                        <p><a href="#"><b> Sunglasses</b></a> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-bottom-list">
+                        <a href="#" class="header-bottom-item">Beauty</a>
+                        <div class="dropdownlist">
+                            <div class="dropdownlist-contain">
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"><b>Shop All</b></a></li>
+                                        <li><a href="#"><b>MakeUp</b></a></li>
+                                        <li><a href="#"><b>Skincare</b></a></li>
+                                        <li><a href="#"><b>Nail</b></a></li>
+                                        <li><a href="#"><b>Hair</b></a></li>
+                                        <li><a href="#"><b>Body</b></a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/hats.webp" alt=""></a>
+                                    <a href="#">
+                                        <p><a href="#"><b> MakeUp</b></a> </p>
+                                    </a>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/ringg.webp" alt=""></a>
+                                    <a href="#">
+                                        <p><a href="#"><b> Skincare</b></a> </p>
+                                    </a>
+                                </div>
+                                <div class="listitem-photo">
+                                    <a href="#"><img src="images/sunglasses.webp" alt=""></a>
+                                    <a href="#">
+                                        <p><a href="#"><b> Body Mist</b></a> </p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-bottom-list">
+                        <a href="#" class="header-bottom-item">Gifts</a>
+                        <div class="dropdownlist">
+                            <div class="dropdownlist-contain">
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"><b>Shop All</b></a></li>
+                                        <li><a href="#"><b>New Today</b></a></li>
+                                        <li><a href="#"><b>New This Week</b></a></li>
+                                        <li><a href="#"><b>Best Seller</b></a></li>
+                                    </ul>
+                                </div>
+                                <div class="listitem">
+                                    <ul class="listitem-character">
+                                        <li><a href="#"> <b>Trending</b></a></li>
+                                        <li><a href="#">Tall Clothing</a></li>
+                                        <li><a href="#">Resort Wear</a></li>
+                                        <li><a href="#">Cut Out</a></li>
+                                        <li><a href="#">Croptop</a></li>
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">90's Style</a></li>
+                                        <li><a href="#">Cozy</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="images/lazyp.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="shoppingbag-container">
+                    <div class="shoppingbag-background img-bg">
+                        <img src="images/191_img_desktop_EN.jpg" width="100%" alt="">
+                    </div>
+
+                    <div class="shoppingbag-content">
+                        <div class="shoppingbag-content-container">
+                            <h2 class="shoppingbag-title">YOUR SELECTION</h2>
+                            <h2 class="shoppingbag-message">Shopping bag is empty</h2><br>
+                            <div class="shoppingbag-btn">
+                                <a href="login.html" class="shoppingbag-btn-form">SIGN IN</a><br>
+                                <a href="product.html" class="shoppingbag-btn-form">CONTINUE SHOPPING</a>
+                            </div>
+                        </div>
+                        <div class="shoppingbag-suggest">
+                            <div class="suggest-detail">
+                                <div >
+                                    <span>
+                                        <i class="fas fa-heart"></i> <b>MAY BE YOU LIKE THIS</b> <i
+                                            class="fas fa-heart"></i>
+                                    </span>
+                                </div>
+                                <div class="row-product">
+                                    <div class="column-product">
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid1.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid2.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-product">
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid3.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid4.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-product">
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid5.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid6.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="row-product">
+                                    <div class="column-product">
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid1.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid2.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-product">
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid3.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid4.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-product">
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid5.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-img">
+                                            <a href="#"><img src="images/grid6.jpg" alt="Avatar"
+                                                    class="product-img-overlay" style="width:100%"></a>
+                                            <div class="middle-title">
+                                                <div class="text">Buy Now</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <button class="btn-up" style="z-index: 10; position: relative;"><a href="#header"> <i
+                        class="fas fa-chevron-up" abbr title="jump to head"></i></a></button>
+
+        </main>
+       
+        <footer class="footer">
+            <div class="footer-contain">
+                <div class="footer-top">
+                    <div class="footer-section">
+
+                        <button class="font-title" type="button">CUSTOMER SERVICE</button>
+
+                        <ul class="footer-list">
+                            <li class="footer-item"> <a href="#" class="footer-item-link">How To Shop </a> </li>
+                            <li class="footer-item"> <a href="#" class="footer-item-link">Shipping </a> </li>
+                            <li class="footer-item"> <a href="#" class="footer-item-link">Returns </a> </li>
+                            <li class="footer-item"> <a href="#" class="footer-item-link">Track Your Guide </a> </li>
+                            <li class="footer-item"> <a href="#" class="footer-item-link">Product Guide </a> </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <button class="font-title">CONTACT US</button>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#" class="footer-item-link">Online Form </a></li>
+                            <li class="footer-item"><a href="#" class="footer-item-link">Chat Now </a></li>
+                            <li class="footer-item"><a href="#" class="footer-item-link">Boutique </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <div class="footer-section-group">
+                            <button class="font-title">THE COMPANY</button>
+                            <ul class="footer-list">
+                                <li class="footer-item"><a href="#" class="footer-item-link">About Shevoke </a></li>
+                                <li class="footer-item"><a href="#" class="footer-item-link">Shevoke Garden </a></li>
+                                <li class="footer-item"><a href="#" class="footer-item-link">Legal </a></li>
+                                <li class="footer-item"><a href="#" class="footer-item-link">Privacy & Cookies </a></li>
+                                <li class="footer-item"><a href="#" class="footer-item-link">Corporate Information </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <button class="font-title">FOLLOW US ON</button>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#" class="footer-item-link"><i
+                                        class="fab fa-facebook fb"></i>Facebook</a></li>
+                            <li class="footer-item"><a href="#" class="footer-item-link"><i
+                                        class="fab fa-instagram insta"></i>Instagram</a></li>
+                            <li class="footer-item"><a href="#" class="footer-item-link"><i
+                                        class="fab fa-youtube yt"></i>Youtube</a></li>
+                            <li class="footer-item"><a href="#" class="footer-item-link"><i class="fab fa-twitter tw">
+                                    </i>Twitter</a></li>
+                            <li class="footer-item"><a href="#" class="footer-item-link"><i
+                                        class="fab fa-pinterest pinter"></i>Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="form-title">© 2021 SHEVOKE</p>
+                    <p style="color: white;">
+                        All rights reserved. IICOMBINED Co., Ltd.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

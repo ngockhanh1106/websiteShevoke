@@ -1,0 +1,107 @@
+.product-content{
+  padding-bottom: 40px;
+}
+.main-image{
+    position: relative;
+    text-align: center;
+    color: rgb(12, 11, 11);
+}
+.text-center-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 66px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Times New Roman",Times,Baskerville,Georgia,serif;
+    line-height: 70px;
+    min-width: 360px;
+}
+
+
+
+.product-maintitle{
+  width: 100%;
+  /* background-color: #202020; */
+  text-align: center;
+  margin: 40px 0 0;
+  position: relative; 
+}
+
+.tab {
+    overflow: hidden;
+    box-shadow: 1px 8px 20px rgb(0 0 0 / 5%);
+    /* max-width: 1100px; */
+    transform: translateY(-35%);
+    background-color: #ebedeeb0;
+    margin: 10px 50px;
+    /* text-align: center;
+    margin: 0, auto; */
+  }
+  
+  .tab button {
+    background-color: inherit; 
+    /* float: left; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    background-color: transparent;
+    color: #928c8c;
+
+    
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    text-decoration: underline #202020;
+    color: #202020;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: rgb(12, 11, 11);
+    color: #f7eaea;
+    outline: none;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-top: none;
+  }
+  
+  .product-layout-grid{
+    display: grid; 
+    grid-template-columns: repeat(4,auto); 
+    grid-gap: 20px 30px;
+    padding: 20px 40px;
+  }
+  .readall-hide:after{
+    content: none;
+  }
+  .readall-button{
+    margin-top: 20px;
+    letter-spacing: 1px;
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid;
+
+  }
+  .readall-button:hover{
+    background-color: black;color: white;
+    transition: .3s ease-in-out;
+  }
+
+  @media (max-width: 1024px) {
+    .product-layout-grid{
+      width: 100%;
+      grid-template-columns: repeat(2,auto);
+    }
+  }
+  
